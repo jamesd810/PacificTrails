@@ -3,11 +3,14 @@
 <head>
 <title>Pacific Trails Resort</title>
 <link rel="stylesheet" href="pacific.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pacific Trails Resort offers panoramic views! Our guests experience camping adventures in private yurts featuring a gas fireplace, king-size bed, and private deck.">
 </head>
 
-<body id="wrapper">
-<div> 
+<body >
+  
+<div id="flow">
+
 <header>
     <h1>Pacific Trails Resort</h1>
 </header>
@@ -18,8 +21,11 @@
    <li><a href="yurts.html">Yurts</a></li> 
    <li><a href="activities.html">Activities</a></li>
    <li><a href="reservations.html">Reservations</a></li>
+   <li><a href="shop.html">Shop</a></li>
   </ul>
 </nav>
+
+<div id="wrapper"> 
 
 <div id="homehero"></div>
 
@@ -27,7 +33,13 @@
   
 <h2>Enjoy Nature in Luxury</h2>
 
-<p>Pacific Trails Resort on the California North Coast offers panoramic views of the Pacific Ocean. Our guests experience an opulent camping adventure in sumptuously appointed private yurts featuring a gas fireplace, king-size bed, and private deck.</p>
+<video width="320" height="240" controls>
+ <source src="pacific/pacific.mp4" type="video/mp4">
+ <source src="pacific/pacific.ogv" type="video/ogv">
+ <source src="pacific/pacific.jpg" type="video/jpg">
+</video>
+
+<p>Pacific Trails Resort offers panoramic views! Our guests experience camping adventures in private yurts featuring a gas fireplace, king-size bed, and private deck.</p>
 
 <span class="resort">Pacific Trails Resort</span>
 
@@ -44,7 +56,8 @@
   <br>
 <p>12010 Pacific Trails Road</p>
 <p>CA 95555</p>
-<p>888-555-5555</p>
+<a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+<span id="desktop">888-555-5555</span>
 </div>
 
 </main>
@@ -52,8 +65,18 @@
 <footer>
   <p>Copyright © 2020 Pacific Trails Resort</p>
   <a href="jamesd@dobson.com">james@dobson.com</a>
+
+  <div>
+    <script>
+      if (Date.parse(document.lastModified) != 0)
+        document.write('<p><hr><small><i>Last modified: '
+                   + document.lastModified
+                   + '</i></small>');
+    </script>
+  </div>
 </footer>
 
+</div>
 </div> 
 </body>
 </html>
